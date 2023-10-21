@@ -72,10 +72,10 @@ const Navbar = () => {
 
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-6">
-                        <li className="text-[#0f1113]  font-semibold"><Link to='/'><a>Home</a></Link></li>
+                        <li className="text-[#0f1113] text-lg  font-bold"><Link to='/'><a>Home</a></Link></li>
 
-                        <li className="text-[#0f1113]  font-semibold"><Link to='/addCar'><a>Add car</a></Link></li>
-                        <li className="text-[#0f1113]  font-semibold"><Link to='/myCart'>
+                        <li className="text-[#0f1113] text-lg  font-bold"><Link to='/addCar'><a>Add Car</a></Link></li>
+                        <li className="text-[#0f1113] text-lg font-bold "><Link to='/myCart'>
 
 
                             <div className="flex">
@@ -110,7 +110,7 @@ const Navbar = () => {
 
                     {
                         user ?
-                            <h2 className="text-black font-semibold">{user.displayName}
+                            <h2 className="text-black font-medium">{user.displayName}
                             </h2>
                             :
                             <h2></h2>
@@ -122,7 +122,7 @@ const Navbar = () => {
 
                     {
                         user ?
-                            <button onClick={handleSignOut} className="btn btn-xs">Sign Out</button>
+                            <button onClick={handleSignOut} className="btn btn-xs md:btn-md">Sign Out</button>
                             :
                             <Link to='/login'><button className="btn btn-xs">Login</button></Link>
 

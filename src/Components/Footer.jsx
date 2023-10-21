@@ -12,7 +12,7 @@ const Footer = () => {
                                     <img className="" src="https://i.ibb.co/6ZFCvYH/logo2.jpg" />
                                 </div>
                             </div>
-                            <h2 className=" hover:bg-white btn-ghost p-0 normal-case sm:text-lg md:text-xl text-[#845EC2]">Velocity Autos</h2>
+                            <h2 className=" hover:bg-white btn-ghost p-0 normal-case sm:text-lg md:text-xl text-[#404b5d]">Velocity Autos</h2>
                         </button>
 
                         <p className="max-w-md font-bold mx-auto mt-4 text-[#cecdc9] dark:text-[#cecdc9]">Driven by Excellence, Defined by Velocity.</p>

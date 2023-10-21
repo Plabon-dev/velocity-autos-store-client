@@ -3,12 +3,12 @@
 const OurFeatures = () => {
     return (
         <div>
-            <section className="bg-gradient-to-b from-[#d2d1cb] via-[#88a0ae] to-[#d2d1cb] dark:bg-gray-900 pt-10">
+            <section className="bg-gradient-to-b from-[#d2d1cb] via-[#88a0ae] to-[#d2d1cb] pt-10">
                 <div className="container px-6 py-10 mx-auto">
                     <h1 className="text-2xl text-center font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Discover the  
                      <span className="text-blue-500"> Velocity Autos </span>Features </h1>
 
-                    {/* <iframe className="min-w-full mt-12 h-64 md:h-[450px] rounded-xl overflow-hidden" src="https://jumpshare.com/embed/Ii2fBwzMtGihW6SVIUcY"  allow="autoplay; fullscreen" allowfullscreen=""></iframe> */}
+                    <iframe className="min-w-full mt-12 h-64 md:h-[450px] rounded-xl overflow-hidden" src="https://jumpshare.com/embed/Ii2fBwzMtGihW6SVIUcY"  allow="autoplay; fullscreen" allowfullscreen=""></iframe>
                   
                     
 

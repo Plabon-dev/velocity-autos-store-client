@@ -52,9 +52,9 @@ const CartCard = ({ cart, carts, setCarts }) => {
     }
 
     return (
-        <div>
+        <div className="bg-gradient-to-b from-[#d2d1cb] via-[#88a0ae] to-sky-300">
            
-<div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="w-full max-w-sm  border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
         <img className="p-8 rounded-t-lg h-96 w-96 object-cover" src={cart.image} alt="product image" />
     </a>
