@@ -40,7 +40,7 @@ const Navbar = () => {
                 <div className="navbar-start mr-20 md:mr-0 ">
                     <div className="dropdown ">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm bg-gradient-to-b from-[#788799] via-[#88a0ae] to-[#d2d1cb] dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li className="font-semibold text-[#0f1113]"><Link to='/'><a>Home</a></Link></li>
@@ -50,13 +50,13 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <Link to= "/"><button className="btn flex justify-center hover:bg-white items-center bg-white  rounded-r-full rounded-l-full  text-white">
+                    <Link to= "/"><button className="btn flex justify-center hover:bg-white items-center bg-white  rounded-r-full rounded-l-full  text-white w-48 md:w-56">
                         <div className="avatar">
-                            <div className="w-10 rounded-full">
+                            <div className="w-8 md:w-10 rounded-full">
                                 <img className="" src="https://i.ibb.co/6ZFCvYH/logo2.jpg" />
                             </div>
                         </div>
-                        <h2 className=" hover:bg-white btn-ghost p-0 normal-case sm:text-lg md:text-xl text-[#404b5d]">Velocity Autos</h2>
+                        <h2 className=" hover:bg-white btn-ghost p-0 normal-case sm:text-base md:text-xl text-[#404b5d]">Velocity Autos</h2>
                     </button></Link>
                 </div>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
                         <li className="text-[#0f1113]  font-semibold"><Link to='/myCart'><a>My Cart</a></Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end space-x-6">
+                <div className="navbar-end space-x-6 flex justify-center items-center md:justify-end">
 
 
 

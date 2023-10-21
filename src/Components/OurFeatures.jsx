@@ -76,7 +76,7 @@ const OurFeatures = () => {
                                 </span>
 
                                 <div className="mt-4 md:mx-4 md:mt-0">
-                                    <h1 className="text-xl font-semibold text-[#0f1113]capitalize dark:text-white">Exceptional Service</h1>
+                                    <h1 className="text-xl font-semibold text-[#0f1113] capitalize dark:text-white">Exceptional Service</h1>
 
                                     <p className="mt-3 text-[#0f1113] dark:text-gray-300">
                                     Our commitment to your satisfaction doesn't end with the sale. Count on Velocity Autos for top-notch service and maintenance, provided by our certified technicians.

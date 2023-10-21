@@ -9,27 +9,33 @@ const CarDetails = () => {
     console.log(cars);
 
 
-    // fetch('http://localhost:5000/cart', {
-    //     method: 'POST',
-    //     headers: {
-    //         'content-type': 'application/json'
-    //     },
-    //     body: JSON.stringify(cars)
-    // })
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //         // if (data.insertedId) {
-    //         //     Swal.fire({
-    //         //         title: 'Congratulation!',
-    //         //         text: 'Car Added to Cart!',
-    //         //         icon: 'success',
-    //         //         confirmButtonText: 'OK'
-    //         //     })
-    //         // }
+    const handleAddToCart = () => {
 
-    //     })
+        fetch('http://localhost:5000/cart', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(cars)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Congratulation!',
+                        text: 'Car Added to Cart!',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    })
+                }
+    
+            })
+    
 
+    } 
+
+   
     
 
 
@@ -52,7 +58,7 @@ const CarDetails = () => {
                     </div>
                     <h2 className="text-center md:text-left text-[#aa454a] font-semibold text-2xl md:text-xl ">Price: ${cars.price}</h2>
                     <div className="card-actions justify-center md:justify-end">
-                        <button className="btn btn-block hover:text-[#3c4251] text-[#cecdc9] bg-[#3c4251]">Add to cart</button>
+                        <button onClick={handleAddToCart} className="btn btn-block hover:text-[#3c4251] text-[#cecdc9] bg-[#3c4251]">Add to cart</button>
                     </div>
                 </div>
             </div>

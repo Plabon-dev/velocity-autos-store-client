@@ -7,7 +7,7 @@ const TeslaCard = ({car}) => {
 
     return (
         <div>
-            <div className="card lg:card-side bg-base-100 shadow-xl w-10/12 mx-auto p-10">
+            <div className="card lg:card-side bg-base-100 shadow-xl w-full md:w-10/12 mx-auto p-10">
                 <figure className="h-96"><img src={image} alt="Album" /></figure>
                 <div className="card-body">
                     <h2 className="text-center md:text-left  text-[#aa454a] font-semibold text-3xl md:text-2xl">{name}</h2>

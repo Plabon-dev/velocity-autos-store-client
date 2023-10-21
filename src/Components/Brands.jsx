@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+// import CarAnimation from "../../public/CarAnimation.json";
+// import lottie from "lottie-react";
 
 const Brands = () => {
 
@@ -10,10 +12,11 @@ const Brands = () => {
     },[])
 
     return (
-        <div className="bg-gradient-to-t from-[#d2d1cb] via-[#88a0ae] to-[#d2d1cb] pt-20 ">
+        <div className="py-20 ">
             <div className=""  data-aos="fade-right">
-            <h2 className="text-center text-gray-800 font-bold text-2xl md:text-4xl">Explore Our Diverse Range of Premier Automobile Brands</h2>
-            <p className="text-center"></p>
+            <h2 className="text-center text-purple-900 font-bold text-2xl md:text-4xl">Explore Our Diverse Range of Premier Automotive Brands</h2>
+           
+            
             </div>
             <div className="grid grid-cols-1 space-y-4 md:grid-cols-3 place-items-center  pt-16">
 
