@@ -82,7 +82,7 @@ const Routes = createBrowserRouter([
             },
             {
                 path: `/carDetails/:id`,
-                element: <CarDetails></CarDetails>,
+                element: <PrivetRoute><CarDetails></CarDetails></PrivetRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/cars/${params.id}`)
                 
 
