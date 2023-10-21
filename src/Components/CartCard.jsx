@@ -1,9 +1,55 @@
+import Swal from "sweetalert2";
 
 
-const CartCard = ({ cart }) => {
+const CartCard = ({ cart, carts, setCarts }) => {
 
-    
+    console.log(carts);
+    const { _id } =  cart;
 
+   const handleDelete = _id => {
+
+    console.log(_id);
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, remove it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+       
+            fetch(`http://localhost:5000/cart/${_id}`, {
+                method: 'DELETE'
+            }) 
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.deletedCount > 0){
+                    Swal.fire(
+                            'Deleted!',
+                            'Car removed from Cart',
+                            'success'
+                          )
+                        const remaining = carts.filter(myCart => myCart._id !== _id);
+                        setCarts(remaining);
+                        console.log(carts);
+
+                    
+                }
+
+
+            } )
+
+
+
+        }
+      })
+
+
+    }
 
     return (
         <div>
@@ -19,7 +65,7 @@ const CartCard = ({ cart }) => {
         
         <div className="flex items-center justify-between">
             <span className="text-3xl font-bold text-red-800 dark:text-white">${cart.price}</span>
-            <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Remove from cart</button>
+            <button onClick={() => handleDelete(cart._id)} className="text-white bg-purple-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Remove from cart</button>
         </div>
     </div>
 </div>

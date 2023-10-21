@@ -9,20 +9,20 @@ const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
     const handleToggle = (e) => {
-        if(e.target.checked) {
+        if (e.target.checked) {
             setTheme("dark");
-        
+
         }
-        else{
+        else {
             setTheme("light");
         }
     }
 
     useEffect(() => {
-        localStorage.setItem("theme", theme); 
+        localStorage.setItem("theme", theme);
         const localTheme = localStorage.getItem("theme");
-        document.querySelector("html").setAttribute("data-theme", localTheme); 
-    },[theme])
+        document.querySelector("html").setAttribute("data-theme", localTheme);
+    }, [theme])
 
     const { user, logOut } = useContext(AuthContext);
 
@@ -46,11 +46,20 @@ const Navbar = () => {
                             <li className="font-semibold text-[#0f1113]"><Link to='/'><a>Home</a></Link></li>
 
                             <li className="font-semibold text-[#0f1113]"><Link to='/addCar'><a>Add Car</a></Link></li>
-                            <li className="text-[#0f1113]  font-semibold"><Link to='/myCart'><a>My Cart</a></Link></li>
+                            <li className="text-[#0f1113]  font-semibold"><Link to='/myCart'>
+
+
+                                <div className="flex">
+                                    <a>My Cart</a>
+                                    <img className="w-6" src="https://svgsilh.com/svg/294547.svg" alt="" />
+                                </div>
+
+                            </Link>
+                            </li>
                         </ul>
                     </div>
 
-                    <Link to= "/"><button className="btn flex justify-center hover:bg-white items-center bg-white  rounded-r-full rounded-l-full  text-white w-48 md:w-56">
+                    <Link to="/"><button className="btn flex justify-center hover:bg-white items-center bg-white  rounded-r-full rounded-l-full  text-white w-48 md:w-56">
                         <div className="avatar">
                             <div className="w-8 md:w-10 rounded-full">
                                 <img className="" src="https://i.ibb.co/6ZFCvYH/logo2.jpg" />
@@ -66,7 +75,16 @@ const Navbar = () => {
                         <li className="text-[#0f1113]  font-semibold"><Link to='/'><a>Home</a></Link></li>
 
                         <li className="text-[#0f1113]  font-semibold"><Link to='/addCar'><a>Add car</a></Link></li>
-                        <li className="text-[#0f1113]  font-semibold"><Link to='/myCart'><a>My Cart</a></Link></li>
+                        <li className="text-[#0f1113]  font-semibold"><Link to='/myCart'>
+
+
+                            <div className="flex">
+                                <a>My Cart</a>
+                                <img className="w-6" src="https://svgsilh.com/svg/294547.svg" alt="" />
+                            </div>
+
+                        </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="navbar-end space-x-6 flex justify-center items-center md:justify-end">
@@ -113,8 +131,8 @@ const Navbar = () => {
                     <label className="swap swap-rotate">
 
                         {/* this hidden checkbox controls the state */}
-                        <input type="checkbox" 
-                        onChange={handleToggle}
+                        <input type="checkbox"
+                            onChange={handleToggle}
                         // checked={theme === "light" ? false : true}
 
 
