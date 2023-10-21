@@ -57,49 +57,49 @@ const AddCar = () => {
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Name</span>
                                 </label>
-                                <input type="text" placeholder="Name" name="name" className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Name" name="name" className="input input-bordered text-purple-700 " />
                             </div>
                             {/* Brand name */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Brand Name</span>
                                 </label>
-                                <input type="text" placeholder="Brand Name" name="brand" className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Brand Name" name="brand" className="input input-bordered text-purple-700 " />
                             </div>
                             {/* Image */}
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text text-[#C4FCF0] font-semibold">Image URL</span>
+                                    <span className="label-text text-[#C4FCF0] font-semibold ">Image URL</span>
                                 </label>
-                                <input type="text" placeholder="Image" name="image" className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Image" name="image" className="input input-bordered text-purple-700 " />
                             </div>
                             {/* Type */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Type</span>
                                 </label>
-                                <input type="text" placeholder="Type" name="type" className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Type" name="type" className="input input-bordered text-purple-700  " />
                             </div>
                             {/* price */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Price</span>
                                 </label>
-                                <input type="text" placeholder="Price" name="price" className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Price" name="price" className="input input-bordered text-purple-700  " />
                             </div>
                             {/* rating */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Rating</span>
                                 </label>
-                                <input type="text" placeholder="Rating" name="rating" className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Rating" name="rating" className="input input-bordered text-purple-700  " />
                             </div>
                             {/* description */}
                             <div className="form-control col-span-2">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Description</span>
                                 </label>
-                                <input type="text" placeholder="Description" name="description" className="input h-20 input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Description" name="description" className="input h-20 input-bordered text-purple-700  " />
                             </div>
 
 
