@@ -21,7 +21,7 @@ const CartCard = ({ cart, carts, setCarts }) => {
       }).then((result) => {
         if (result.isConfirmed) {
        
-            fetch(`http://localhost:5000/cart/${_id}`, {
+            fetch(`https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cart/${_id}`, {
                 method: 'DELETE'
             }) 
             .then(res => res.json())

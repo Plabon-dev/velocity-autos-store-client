@@ -11,7 +11,7 @@ const CarDetails = () => {
 
     const handleAddToCart = () => {
 
-        fetch('http://localhost:5000/cart', {
+        fetch('https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

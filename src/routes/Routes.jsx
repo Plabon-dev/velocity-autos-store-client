@@ -50,28 +50,28 @@ const Routes = createBrowserRouter([
             {
                 path: "/toyota",
                 element: <Toyota></Toyota>,
-                loader: () => fetch('http://localhost:5000/cars')
+                loader: () => fetch('https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cars')
 
             },
             {
                 path: "/nissan",
                 element: <Nissan></Nissan>,
-                loader: () => fetch('http://localhost:5000/cars')
+                loader: () => fetch('https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cars')
             },
             {
                 path: "/bmw",
                 element: <Bmw></Bmw>,
-                loader: () => fetch('http://localhost:5000/cars')
+                loader: () => fetch('https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cars')
             },
             {
                 path: "/tesla",
                 element: <Tesla></Tesla>,
-                loader: () => fetch('http://localhost:5000/cars')
+                loader: () => fetch('https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cars')
             },
             {
                 path: "/honda",
                 element: <Honda></Honda>,
-                loader: () => fetch('http://localhost:5000/cars')
+                loader: () => fetch('https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cars')
 
             },
             {
@@ -83,7 +83,7 @@ const Routes = createBrowserRouter([
             {
                 path: `/carDetails/:id`,
                 element: <PrivetRoute><CarDetails></CarDetails></PrivetRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/cars/${params.id}`)
+                loader: ({params}) => fetch(`https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cars/${params.id}`)
                 
 
             },
@@ -91,13 +91,13 @@ const Routes = createBrowserRouter([
             {
                 path: "/updateCar/:id",
                 element: <PrivetRoute><UpdateCar></UpdateCar></PrivetRoute>,             
-                loader: ({params}) => fetch(`http://localhost:5000/cars/${params.id}`) 
+                loader: ({params}) => fetch(`https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cars/${params.id}`) 
 
             },
             {
                 path: "/myCart",
                 element: <PrivetRoute><MyCart></MyCart></PrivetRoute>,
-                loader: () => fetch('http://localhost:5000/cart')
+                loader: () => fetch('https://velocity-autos-server-i9mlh5rld-asaduzzaman-plabons-projects.vercel.app/cart')
                
 
             },
