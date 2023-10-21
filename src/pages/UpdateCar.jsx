@@ -64,49 +64,49 @@ const UpdateCar = () => {
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Name</span>
                                 </label>
-                                <input type="text" placeholder="Name"  name="name" defaultValue={name} className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Name"  name="name" defaultValue={name} className="input input-bordered " />
                             </div>
                             {/* Brand name */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Brand Name</span>
                                 </label>
-                                <input type="text" placeholder="Brand Name" name="brand" defaultValue={brand} className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Brand Name" name="brand" defaultValue={brand} className="input input-bordered " />
                             </div>
                             {/* Image */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Image URL</span>
                                 </label>
-                                <input type="text" placeholder="Image" name="image" defaultValue={image} className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Image" name="image" defaultValue={image} className="input input-bordered" />
                             </div>
                             {/* Type */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Type</span>
                                 </label>
-                                <input type="text" placeholder="Type" name="type" defaultValue={type} className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Type" name="type" defaultValue={type} className="input input-bordered " />
                             </div>
                             {/* price */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Price</span>
                                 </label>
-                                <input type="text" placeholder="Price" name="price" defaultValue={price} className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Price" name="price" defaultValue={price} className="input input-bordered " />
                             </div>
                             {/* rating */}
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Rating</span>
                                 </label>
-                                <input type="text" placeholder="Rating" name="rating" defaultValue={rating} className="input input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Rating" name="rating" defaultValue={rating} className="input input-bordered " />
                             </div>
                             {/* description */}
                             <div className="form-control col-span-2">
                                 <label className="label">
                                     <span className="label-text text-[#C4FCF0] font-semibold">Description</span>
                                 </label>
-                                <input type="text" placeholder="Description" name="description" defaultValue={description} className="input h-20 input-bordered text-[#26183C] " />
+                                <input type="text" placeholder="Description" name="description" defaultValue={description} className="input h-20 input-bordered " />
                             </div>
 
 
