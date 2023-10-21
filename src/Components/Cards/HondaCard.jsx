@@ -19,7 +19,7 @@ const HondaCard = ({car}) => {
                     <h2 className="text-center md:text-left text-[#aa454a] font-semibold text-2xl md:text-xl ">Price: ${price}</h2>
                     <div className="card-actions justify-center md:justify-end">
                     <Link to={`/carDetails/${_id}`}><button className="btn hover:text-[#3c4251] text-[#cecdc9] bg-[#3c4251]">See details</button></Link>
-                    <Link to={`/updateCar`}><button className="btn hover:text-[#3c4251] text-[#cecdc9] bg-[#3c4251]">Update</button></Link>
+                    <Link to={`/updateCar/${_id}`}><button className="btn hover:text-[#3c4251] text-[#cecdc9] bg-[#3c4251]">Update</button></Link>
                     </div>
                 </div>
             </div>

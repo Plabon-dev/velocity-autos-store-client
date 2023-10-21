@@ -1,8 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 5 project features:
+* Responsive website for mobile.
+* By clicking on the brand cards Availabe cars of the brands will be shown. 
+* Single page application website.
+* Cars onformation can be updated as wll as new car can be added .
+* All the Cars Cards are dynamic.
+* Cars can be added or removed from the My Cart.   
+* 404 error page.
